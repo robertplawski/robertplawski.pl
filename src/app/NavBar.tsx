@@ -1,13 +1,13 @@
 "use client"
 import {BiCaretLeft} from "react-icons/bi";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div
-            className={`absolute transition-transform right-0 flex flex-row gap-8 ${!isOpen ? "translate-x-55" : ""}`}>
+            className={`p-2 rounded-2xl absolute transition-transform right-0 flex flex-row gap-8 ${!isOpen ? "translate-x-60" : ""}`}>
             <div className={"flex-1 flex justify-center px-8 cursor-pointer border-r-2 flex-col border-[#6a6a6a] "}
                  onClick={() => setIsOpen(val => !val)}>
                 <BiCaretLeft color={"#6a6a6a"} size={32}/>

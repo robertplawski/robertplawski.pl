@@ -2,11 +2,17 @@ import {ContactInfo} from "@/app/ContactInfo";
 import {MdEmail, MdPhone} from "react-icons/md";
 import {BsGithub, BsLinkedin} from "react-icons/bs";
 import {FaBluesky, FaLocationPin} from "react-icons/fa6";
-import {BiLogoJavascript, BiLogoPhp, BiLogoReact, BiLogoTypescript, BiLogoWordpress} from "react-icons/bi";
+import {
+    BiLogoPhp,
+    BiLogoPython,
+    BiLogoReact,
+    BiLogoTypescript,
+    BiLogoWordpress
+} from "react-icons/bi";
 import {DiLinux} from "react-icons/di";
-import {TbSql} from "react-icons/tb";
 import {CurrentYear} from "@/app/CurrentYear";
-import {NavBar} from "@/app/NavBar";
+import {SiMysql} from "react-icons/si";
+import {FaDocker, FaExclamation} from "react-icons/fa";
 
 export default function Home() {
     return (
@@ -15,14 +21,13 @@ export default function Home() {
             {/*<NavBar/>*/}
             <main
                 className="grid grid-cols-1 border-neutral-700  lg:grid-cols-[1fr_auto] items-center gap-[32px] lg:gap-[48px] row-start-1 justify-center ">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
-                    Robert Pławski<br/> web developer<br/>
+                <h1 className="tracking-wide text-4xl sm:text-5xl lg:text-6xl font-bold">
+                    Robert Pławski<br/> software developer<br/>
                 </h1>
-                <div className={"flex flex-col row-span-2 gap-2 text-xl"}>
+                <div className={"flex flex-col h-full justify-around row-span-2 gap-2 text-xl"}>
                     <ContactInfo icon={<FaLocationPin/>} label={"Robert's location"} value={"Opole, Poland"}/>
                     <ContactInfo icon={<MdEmail/>} label={"Robert's email address"} href={"mailto:dev@robertplawski.pl"}
-                                 value={"dev@robertplawski.pl"}
-                                 fallback={"spm@robertplawski.pl"}/>
+                                 value={"dev@robertplawski.pl"}/>
                     <ContactInfo icon={<MdPhone/>} label={"Robert's phone number"} href={"tel:+48660206188"}
                                  value={"+48 660 206 188"}
                                  fallback={"+48 ___ ___ ___"}/>
@@ -37,16 +42,44 @@ export default function Home() {
                                  href={"https://bsky.app/profile/robertplawski.pl"}/>
                 </div>
 
-                <div className={"flex text-4xl flex-row gap-2 justify-between "}>
-                    <BiLogoJavascript/>
-                    <BiLogoTypescript/>
-                    <BiLogoReact/>
-                    <BiLogoWordpress/>
-                    <BiLogoPhp/>
-                    <TbSql/>
-                    <DiLinux/>
+                <div className={"flex flex-col gap-4"}>
+                    <div className={"flex text-4xl flex-wrap items-center flex-row gap-2 justify-between "}>
+
+                        <BiLogoTypescript/>
+                        <BiLogoReact/>
+                        <BiLogoWordpress/>
+                        <BiLogoPhp/>
+                        {/*<SiSymfony/>*/}
+                        <SiMysql/>
+                        <BiLogoPython/>
+                        <FaDocker/>
+                        <DiLinux/>
+                        <p className={"text-sm"}>and more...</p>
+                    </div>
+
+                </div>
+                <div
+                    className={"  sm:text-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full flex-wrap gap-2"}>
+                    <a href={'mailto:dev@robertplawski.pl'}
+                       className={"cursor-pointer bg-white p-3 px-5 text-center rounded-full text-black"}>
+                        Email me!
+                    </a>
+                    <button className={" cursor-pointer  p-3 px-5 rounded-full text-white border-white border-[1px]"}>
+                        Portfolio
+                    </button>
+                    <button className={"cursor-pointer  p-3 px-5 rounded-full text-white border-white border-[1px]"}>
+                        About me
+                    </button>
+                    <button className={"cursor-pointer  p-3 px-5 rounded-full text-white border-white border-[1px]"}>
+                        Testimonials
+                    </button>
+                </div>
+                <div className={"text-xl flex flex-row gap-2 items-center"}><FaExclamation/><p>
+                    Available for
+                    hire </p>
                 </div>
             </main>
+
             <footer
                 className={"text-md font-normal text-neutral-600 tracking-normal text-center lg:tracking-widest "}>
                 robertplawski.pl,
