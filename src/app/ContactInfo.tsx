@@ -1,7 +1,7 @@
 "use client"
 import {ReactElement, useEffect, useState} from "react";
 
-type ContactInfoProps = {
+interface ContactInfoProps {
     icon: ReactElement,
     label: string,
     href?: string,
