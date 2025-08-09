@@ -18,31 +18,39 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Lorem Ipsum E-commerce",
+    title: "Kajet - note taking app",
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
   },
-  {
+  /*{
     id: 2,
-    title: "Sed Do Analytics Dashboard",
+    title: "create-eksa-app",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: ["TypeScript", "D3.js", "PostgreSQL", "AWS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
+      "create-eksa-app is a modern, fully-configured fullstack starter kit for Next.js applications designed to get you up and running in minutes.",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "shadcn/ui",
+      "Drizzle ORM",
+      "Auth.js",
+      "next-intl",
+      "TypeScript",
+    ],
+    githubUrl: "https://github.com/eksabajt-pl/create-eksa-app",
+    liveUrl: "https://create.eksabajt.pl",
+  },*/
   {
     id: 3,
-    title: "Consectetur Social App",
+    title: "Crazy eights - card game",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     technologies: ["Next.js", "GraphQL", "Redis", "Docker"],
     githubUrl: "https://github.com",
   },
-  {
+  /*{
     id: 4,
     title: "Adipiscing Task Manager",
     description:
@@ -67,7 +75,7 @@ const projects: Project[] = [
     technologies: ["Python", "Django", "Celery", "PostgreSQL"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-  },
+  },*/
 ];
 
 export default function Portfolio() {

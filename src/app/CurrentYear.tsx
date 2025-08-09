@@ -1,6 +1,3 @@
-export const CurrentYear = async () => {
-    "use server"
-    return (
-        <span className="current-year"> {new Date().getFullYear()}  </ span>
-    );
+export const CurrentYear = () => {
+  return <span className="current-year"> {new Date().getFullYear()} </span>;
 };

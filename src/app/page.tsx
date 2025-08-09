@@ -15,6 +15,7 @@ import { FaChevronDown, FaDocker } from "react-icons/fa";
 import { HeroButton } from "@/app/HeroButton";
 import { JobStatus } from "@/app/JobStatus";
 import { CurrentYear } from "@/app/CurrentYear";
+import { Footer } from "@/app/Footer";
 import EyeCandy from "./EyeCandy";
 import Portfolio from "./Portfolio";
 import ProfessionalExperience from "./ProfessionalExperience";
@@ -125,6 +126,7 @@ export default function Home() {
       </div>
       <ProfessionalExperience />
       <Portfolio />
+      <Footer />
     </>
   );
 }
