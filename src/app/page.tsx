@@ -17,6 +17,7 @@ import { JobStatus } from "@/app/JobStatus";
 import { CurrentYear } from "@/app/CurrentYear";
 import EyeCandy from "./EyeCandy";
 import Portfolio from "./Portfolio";
+import ProfessionalExperience from "./ProfessionalExperience";
 
 const CONFIG = {
   experimental: true,
@@ -122,6 +123,7 @@ export default function Home() {
           </div>
         )}
       </div>
+      <ProfessionalExperience />
       <Portfolio />
     </>
   );
