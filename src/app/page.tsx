@@ -1,7 +1,7 @@
 import { ContactInfo } from "@/app/ContactInfo";
 import { MdEmail, MdPhone } from "react-icons/md";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaBluesky, FaLocationPin } from "react-icons/fa6";
+import { BsGithub } from "react-icons/bs";
+import { FaLocationPin } from "react-icons/fa6";
 import {
   BiLogoPhp,
   BiLogoPython,
@@ -15,6 +15,7 @@ import { FaChevronDown, FaDocker } from "react-icons/fa";
 import { HeroButton } from "@/app/HeroButton";
 import { JobStatus } from "@/app/JobStatus";
 import { CurrentYear } from "@/app/CurrentYear";
+import EyeCandy from "./EyeCandy";
 
 const CONFIG = {
   experimental: false,
@@ -22,8 +23,9 @@ const CONFIG = {
 
 export default function Home() {
   return (
-    <div className="relative font-sans  max-w-screen flex sm:justify-center items-center flex-col gap-8 min-h-screen p-8 gap-0 lg:p-20">
-      <div className={"scale-90 sm:scale-100 xl:scale-130"}>
+    <div className="relative font-sans  max-w-screen flex justify-center items-center flex-col gap-8 min-h-screen p-8 gap-0 lg:p-20">
+      <EyeCandy />
+      <div className={"sm:scale-100 xl:scale-130"}>
         <main className="translate-y-6 grid grid-cols-1 border-neutral-700  lg:grid-cols-[1fr_auto] items-center gap-[32px] lg:gap-[48px] row-start-1 justify-center ">
           <h1 className="tracking-wide text-4xl sm:text-5xl lg:text-6xl font-bold">
             Robert Pławski
