@@ -95,31 +95,17 @@ export default function Home() {
               </HeroButton>
               {CONFIG.experimental && (
                 <HeroButton variant="secondary" href={"#portfolio"}>
-                  Portfolio
+                  Scroll down
                 </HeroButton>
               )}
             </div>
             <JobStatus />
-
-            {!CONFIG.experimental && (
-              <footer
-                className={
-                  "text-md font-normal flex flex-row items-center  text-neutral-600 tracking-normal lg:tracking-widest "
-                }
-              >
-                <p>
-                  robertplawski.pl, all rights reserved &copy;
-                  <CurrentYear />
-                </p>
-              </footer>
-            )}
           </main>
         </div>
         {CONFIG.experimental && (
           <div
             className={"flex flex-col gap-2 items-center absolute  bottom-10"}
           >
-            <p>learn more</p>
             <FaChevronDown />
           </div>
         )}
