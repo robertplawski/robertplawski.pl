@@ -17,7 +17,7 @@ const experiences: Experience[] = [
     icon: <FaLaptop />,
     company: "Freelancing, Wordpress",
     position: "Web development",
-    period: "2024 - Present",
+    period: "2025 - Present",
     description:
       "Building and maintaining custom WordPress websites, creating themes and plugins, optimizing performance, and managing client sites.",
     technologies: [
@@ -33,14 +33,25 @@ const experiences: Experience[] = [
     ],
   },
   {
+    id: 2,
+    icon: <FaLaptop />,
+    company: "",
+    position: "Junior Frontend Developer Internship",
+    period: "2025 ",
+    description:
+      "Managed React frontend of an e-commerce application with emphasis on responsive design. Gained experience using git, react, typescript and css postprocessors. Also improved my teamwork skills. ",
+    technologies: ["React", "Typescript", "Sass", "Git"],
+  },
+  {
     id: 3,
     icon: <FaGraduationCap />,
     company: "ZSTiO im. Kazimierza Gzowskiego w Opolu",
-    position: "Technik programista",
-    period: "2022 - 2027",
+    position: "Nauka na profilu - technik programista",
+    period: "2022 - Present ",
     description:
+      "Doświadczenie w tworzeniu aplikacji na wydarzenia promocyjne szkoły. " +
       "Kształcenie w zakresie projektowania, programowania oraz administrowania aplikacjami webowymi i bazami danych. " +
-      "Praktyczna nauka języków programowania (JavaScript, Python, Kotlin, C++), technologii frontendowych (HTML, CSS, React) oraz narzędzi developerskich (Git). " +
+      "Praktyczna nauka języków programowania, technologii frontendowych oraz narzędzi developerskich (Git). " +
       "Poznanie i praca z technologiami LAMP (Linux, Apache, MySQL, PHP).",
     technologies: [
       "JavaScript",
@@ -75,7 +86,7 @@ export default function ProfessionalExperience() {
           </p>
         </div>
 
-        <div className="mask-b-from-75% pb-1 px-4">
+        <div className="mask-b-from-85% pb-1 px-4">
           <ol className="relative border-l border-neutral-70 ">
             {experiences.map((experience) => (
               <li key={experience.id} className="mb-10 ml-8">

@@ -16,15 +16,13 @@ import { HeroButton } from "@/app/HeroButton";
 import { JobStatus } from "@/app/JobStatus";
 import { CurrentYear } from "@/app/CurrentYear";
 import { Footer } from "@/app/Footer";
+import { TechIconLink } from "@/app/TechIconLink";
 import EyeCandy from "./EyeCandy";
 import Portfolio from "./Portfolio";
 import ProfessionalExperience from "./ProfessionalExperience";
 
-const CONFIG = {
-  experimental: true,
-};
-
 export default function Home() {
+  const onlyHero = false;
   return (
     <>
       <div className="relative font-sans  max-w-screen flex justify-center items-center flex-col gap-8 min-h-screen p-8 gap-0 lg:p-20">
@@ -73,15 +71,46 @@ export default function Home() {
                   "grid grid-cols-5 md:grid-cols-9 text-4xl items-center  gap-2 justify-between "
                 }
               >
-                <BiLogoTypescript />
-                <BiLogoReact />
-                <BiLogoWordpress />
-                <BiLogoPhp />
-                {/*<SiSymfony/>*/}
-                <SiMysql />
-                <BiLogoPython />
-                <FaDocker />
-                <DiLinux />
+                <TechIconLink
+                  icon={<BiLogoTypescript />}
+                  href="https://www.typescriptlang.org/"
+                  label="TypeScript"
+                />
+                <TechIconLink
+                  icon={<BiLogoReact />}
+                  href="https://react.dev/"
+                  label="React"
+                />
+                <TechIconLink
+                  icon={<BiLogoWordpress />}
+                  href="https://wordpress.org/"
+                  label="WordPress"
+                />
+                <TechIconLink
+                  icon={<BiLogoPhp />}
+                  href="https://www.php.net/"
+                  label="PHP"
+                />
+                <TechIconLink
+                  icon={<SiMysql />}
+                  href="https://www.mysql.com/"
+                  label="MySQL"
+                />
+                <TechIconLink
+                  icon={<BiLogoPython />}
+                  href="https://www.python.org/"
+                  label="Python"
+                />
+                <TechIconLink
+                  icon={<FaDocker />}
+                  href="https://www.docker.com/"
+                  label="Docker"
+                />
+                <TechIconLink
+                  icon={<DiLinux />}
+                  href="https://www.linux.org/"
+                  label="Linux"
+                />
                 <p className={"text-sm tracking-tight"}>+ more...</p>
               </div>
             </div>
@@ -93,7 +122,7 @@ export default function Home() {
               <HeroButton variant="hero" href={"mailto:dev@robertplawski.pl"}>
                 Email me!
               </HeroButton>
-              {CONFIG.experimental && (
+              {false && (
                 <HeroButton variant="secondary" href={"#portfolio"}>
                   Scroll down
                 </HeroButton>
@@ -102,7 +131,7 @@ export default function Home() {
             <JobStatus />
           </main>
         </div>
-        {CONFIG.experimental && (
+        {!onlyHero && (
           <div
             className={"flex flex-col gap-2 items-center absolute  bottom-10"}
           >
@@ -110,9 +139,13 @@ export default function Home() {
           </div>
         )}
       </div>
-      <ProfessionalExperience />
-      <Portfolio />
-      <Footer />
+      {!onlyHero && (
+        <>
+          <ProfessionalExperience />
+          <Portfolio />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
