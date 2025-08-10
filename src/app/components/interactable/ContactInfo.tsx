@@ -40,7 +40,7 @@ export const ContactInfo = ({
     <a
       className={`flex items-center ${sizeClasses[variant]} text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors group`}
       title={label}
-      href={href}
+      href={mounted ? href : ""}
       target={
         href && !href.startsWith("mailto:") && !href.startsWith("tel:")
           ? "_blank"
