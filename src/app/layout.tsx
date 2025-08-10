@@ -40,14 +40,6 @@ export const metadata: Metadata = {
       "Software developer z Opola, specjalizujący się w technologiach webowych. Dostępny do współpracy i projektów freelance.",
     url: "https://robertplawski.pl/",
     siteName: "Robert Pławski - Portfolio",
-    /*images: [
-      {
-        url: "https://robertplawski.pl/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Robert Pławski - software developer",
-      },
-    ],*/
     locale: "pl_PL",
     type: "website",
   },
@@ -60,6 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+      <meta name="darkreader-lock" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden `}
       >
