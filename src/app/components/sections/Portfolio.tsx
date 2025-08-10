@@ -1,9 +1,8 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import GlowCard from "./bits/GlowCard/GlowCard";
-import AnimatedGrid from "./bits/AnimatedGrid/AnimatedGrid";
-import { BiCode, BiLaptop } from "react-icons/bi";
-import { BsFillLaptopFill } from "react-icons/bs";
+import GlowCard from "../../bits/GlowCard/GlowCard";
+import AnimatedGrid from "../../bits/AnimatedGrid/AnimatedGrid";
+import { BiCode } from "react-icons/bi";
 
 interface Project {
   id: number;

@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { CurrentYear } from "@/app/CurrentYear";
+import { CurrentYear } from "@/app/components/informational/CurrentYear";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
-import { FaLocationPin } from "react-icons/fa6";
-import { ContactInfo } from "./ContactInfo";
+import { ContactInfo } from "../interactable/ContactInfo";
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
