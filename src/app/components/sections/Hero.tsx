@@ -24,7 +24,7 @@ function Hero() {
       <EyeCandy />
       <div className={"sm:scale-100 xl:scale-130"}>
         <main className="translate-y-6 grid grid-cols-1 border-neutral-700  lg:grid-cols-[1fr_auto] items-center gap-[32px] lg:gap-[48px] row-start-1 justify-center ">
-          <h1 className="tracking-wide text-4xl sm:text-5xl lg:text-6xl font-bold">
+          <h1 className="tracking-wide font-bold text-4xl sm:text-5xl lg:text-6xl ">
             Robert Pławski
             <br /> software developer
             <br />
@@ -36,6 +36,7 @@ function Hero() {
           >
             <ContactInfo
               icon={<FaLocationPin />}
+              href={"https://www.opole.pl/dla-inwestora/o-miescie"}
               label={"Robert's location"}
               value={"Opole, Poland"}
             />

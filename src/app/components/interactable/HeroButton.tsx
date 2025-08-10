@@ -11,7 +11,7 @@ export const HeroButton = ({ href, variant, children }: HeroButtonProps) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`cursor-pointer px-6 py-3 text-center rounded-full font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-opacity-50 ${
+      className={`block cursor-pointer px-6 py-3 text-center rounded-full font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-opacity-50 ${
         variant === "hero"
           ? "bg-neutral-800 text-white border border-neutral-700 hover:bg-neutral-700 hover:border-neutral-600 shadow-lg hover:shadow-xl hover:shadow-neutral-900/50 focus:ring-neutral-600"
           : variant === "secondary"

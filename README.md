@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Robert Pławski - Portfolio Website
 
-## Getting Started
+A modern, interactive portfolio website showcasing my professional experience, projects, and technical skills. Built with Next.js 15, React 19, and featuring stunning visual effects.
 
-First, run the development server:
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green.svg)](https://robertplawski.pl) [![Next.js](https://img.shields.io/badge/Next.js-15.4.1-black.svg)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/) [![Cloudflare Pages](https://img.shields.io/badge/Deployed-Cloudflare%20Pages-orange.svg)](https://pages.cloudflare.com/)
+
+## 🛠️ Tech Stack
+
+### Core Technologies
+
+- **Next.js 15.4.1** - React framework with App Router
+- **React 19.1.0** - UI library
+- **TypeScript 5.x** - Type safety
+- **Tailwind CSS 4.x** - Utility-first CSS framework
+
+### Visual & Animation
+
+- **React bits** - animated React components
+
+### Deployment & DevOps
+
+- **Cloudflare Pages** - Edge deployment
+- **OpenNext.js** - Next.js adapter for Cloudflare
+- **Wrangler** - Cloudflare CLI
+
+## 📊 Performance
+
+- **Lighthouse Score**: 96/100/100/100
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.8s
+- **Cumulative Layout Shift**: 0
+- **Time to Interactive**: < 3.5s
+
+## 📁 Project Structure
+
+```
+robertplawski.pl/
+├── src/
+│   ├── app/
+│   │   ├── components/     # UI components
+│   │   │   ├── informational/     # Compponents which display static information
+│   │   │   ├── interactable/     # Components that user can interact with
+│   │   │   └── sections/     # Site Sections
+│   │   ├── globals.css     # Global styles
+│   │   ├── layout.tsx      # Root layout
+│   │   └── page.tsx        # Home page
+├── public/                 # Static assets
+├── wrangler.jsonc         # Cloudflare configuration
+├── open-next.config.ts    # OpenNext.js configuration
+└── next.config.ts         # Next.js configuration
+```
+
+## 🎯 Sections
+
+- **Hero** - Eye-catching introduction with animated background
+- **Professional Experience** - Timeline of work history
+- **Source Code** - GitHub repositories display
+
+## 🎨 Customization
+
+### Content Management
+
+- Update personal information in `src/app/components/sections/`
+- Modify projects in the Portfolio section
+- Add testimonials in the Testimonials section
+- Update professional experience timeline
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview Cloudflare deployment
+- `npm run deploy` - Deploy to Cloudflare Pages
+- `npm run cf-typegen` - Generate Cloudflare types
+
+### Code Quality
+
+- **ESLint** - Code linting with Next.js config
+- **TypeScript** - Strict type checking
+- **Prettier** - Code formatting (recommended)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/robertplawski/robertplawski.pl.git
+cd robertplawski.pl
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Local Build
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Cloudflare Pages Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Preview deployment
+npm run preview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Production deployment
+npm run deploy
+```
 
-## Deploy on Vercel
+## 🌐 Browser Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Contact
+
+- **Website**: [robertplawski.pl](https://robertplawski.pl)
+- **Email**: [contact@robertplawski.pl](mailto:contact@robertplawski.pl)
+- **GitHub**: [@robertplawski](https://github.com/robertplawski)
+
+---
+
+Built with ❤️ by Robert Pławski

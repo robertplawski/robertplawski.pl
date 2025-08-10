@@ -18,7 +18,7 @@ export default function Home() {
       {/* <Footer /> */}
       <SourceCode />
       <div className="font-mono text-sm bg-neutral-900 border-neutral-200 dark:border-neutral-900 p-8 text-center">
-        <p className=" text-neutral-500 dark:text-neutral-500">
+        <p className="  dark:text-neutral-200">
           robertplawski.pl © <CurrentYear />
         </p>
       </div>
