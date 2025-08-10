@@ -41,6 +41,16 @@ export const ContactInfo = ({
       className={`flex items-center ${sizeClasses[variant]} text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors group`}
       title={label}
       href={href}
+      target={
+        href && !href.startsWith("mailto:") && !href.startsWith("tel:")
+          ? "_blank"
+          : undefined
+      }
+      rel={
+        href && !href.startsWith("mailto:") && !href.startsWith("tel:")
+          ? "noopener noreferrer"
+          : undefined
+      }
     >
       <span
         className={`transition-transform group-hover:scale-110 ${iconSizes[variant]}`}

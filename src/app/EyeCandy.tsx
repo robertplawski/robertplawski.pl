@@ -1,4 +1,5 @@
 "use client";
+import Dither from "./bits/Dither/Dither";
 import Waves from "./bits/Waves/Waves";
 
 export default function EyeCandy() {
@@ -16,16 +17,16 @@ export default function EyeCandy() {
         xGap={12}
         yGap={36}
       />
-      {/*<Dither
+      {/* <Dither
         waveColor={new Array(3).fill(0.9) as [number, number, number]}
         disableAnimation={false}
         enableMouseInteraction={false}
         mouseRadius={0.3}
         colorNum={3}
         waveAmplitude={0.25}
-        waveFrequency={4}
+        waveFrequency={6}
         waveSpeed={0.015}
-      />*/}
+      /> */}
     </div>
   );
 }

@@ -28,7 +28,7 @@ function SourceCode() {
           </q>
           <div className="mt-8">
             <HeroButton
-              href="https://github.com/robertplawski"
+              href="https://github.com/robertplawski/robertplawski.pl"
               variant="secondary"
             >
               View source on GitHub

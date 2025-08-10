@@ -1,3 +1,4 @@
+"use client";
 import { ContactInfo } from "@/app/components/interactable/ContactInfo";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
@@ -58,7 +59,6 @@ function Hero() {
               value={"robertplawski"}
             />
           </div>
-
           <div className={"flex flex-col gap-4"}>
             <div
               className={
