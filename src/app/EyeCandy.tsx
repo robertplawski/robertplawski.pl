@@ -1,5 +1,4 @@
 "use client";
-import Dither from "./bits/Dither/Dither";
 import Waves from "./bits/Waves/Waves";
 
 export default function EyeCandy() {

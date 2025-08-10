@@ -40,6 +40,7 @@ export default function Contact() {
 
       // Clear success message after 5 seconds
       setTimeout(() => setSubmitStatus("idle"), 5000);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus("idle"), 5000);
