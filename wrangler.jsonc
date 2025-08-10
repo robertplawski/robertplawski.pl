@@ -8,6 +8,6 @@
     "binding": "ASSETS"
   },
   "build": {
-    "command": "npm install && npm run build"
+    "command": "npm install && npm run open-build"
   }
 }
