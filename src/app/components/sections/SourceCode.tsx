@@ -8,7 +8,7 @@ function SourceCode() {
       id="source"
       className="relative py-40 px-4 sm:px-6 lg:px-8 bg-neutral-950 border-y-1 border-neutral-700"
     >
-      <div className="opacity-40 absolute top-0 left-0 w-full h-full">
+      <div className="opacity-30 absolute top-0 left-0 w-full h-full">
         <LetterGlitch
           glitchColors={["#e5e5e5", "#a3a3a3", "cacaca", "#737373"]}
           glitchSpeed={10}

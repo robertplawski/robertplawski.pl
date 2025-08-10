@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Robert Pławski – Freelance Software Developer",
   description:
-    "Robert Pławski – doświadczony software developer z Opola, oferujący usługi freelance oraz współpracę na stałe. Specjalizuję się w tworzeniu nowoczesnych aplikacji webowych.",
+    "Software developer z Opola, oferujący usługi freelance oraz współpracę na stałe, specjalizujący się w technologiach webowych. ",
   keywords: [
     "Robert Pławski",
     "software developer",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Robert Pławski – Software Developer",
     description:
-      "Freelance software developer z Opola, specjalizujący się w web. Dostępny do współpracy i projektów freelance.",
+      "Software developer z Opola, specjalizujący się w technologiach webowych. Dostępny do współpracy i projektów freelance.",
     url: "https://robertplawski.pl/",
     siteName: "Robert Pławski - Portfolio",
     /*images: [
