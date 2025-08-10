@@ -41,7 +41,7 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-neutral-900 border-t border-neutral-800 text-neutral-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           {/* Newsletter Section */}
           <div className="md:col-span-1">
             <h3 className="text-xl font-bold text-white mb-4">Stay Updated</h3>
@@ -56,7 +56,8 @@ export const Footer = () => {
                   Thank you for subscribing! 🎉
                 </p>
                 <p className="text-sm text-green-300 mt-1">
-                  You&apos;ll receive updates soon.
+                  Please check your inbox to approve the newsletter
+                  subscription.
                 </p>
               </div>
             ) : (
@@ -90,11 +91,6 @@ export const Footer = () => {
           <div className="md:col-span-1">
             <h3 className="text-xl font-bold text-white mb-4">Contact Me</h3>
             <div className="space-y-3">
-              <ContactInfo
-                icon={<FaLocationPin />}
-                label={"Robert's location"}
-                value={"Opole, Poland"}
-              />
               <ContactInfo
                 icon={<MdEmail />}
                 label={"Robert's email address"}

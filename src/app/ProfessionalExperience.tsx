@@ -32,6 +32,31 @@ const experiences: Experience[] = [
       "Elementor",
     ],
   },
+  {
+    id: 3,
+    icon: <FaGraduationCap />,
+    company: "ZSTiO im. Kazimierza Gzowskiego w Opolu",
+    position: "Technik programista",
+    period: "2022 - 2027",
+    description:
+      "Kształcenie w zakresie projektowania, programowania oraz administrowania aplikacjami webowymi i bazami danych. " +
+      "Praktyczna nauka języków programowania (JavaScript, Python, Kotlin, C++), technologii frontendowych (HTML, CSS, React) oraz narzędzi developerskich (Git). " +
+      "Poznanie i praca z technologiami LAMP (Linux, Apache, MySQL, PHP).",
+    technologies: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Python",
+      "Kotlin",
+      "C++",
+      "Git",
+      "Linux",
+      "Apache",
+      "MySQL",
+      "PHP",
+    ],
+  },
 ];
 
 export default function ProfessionalExperience() {
