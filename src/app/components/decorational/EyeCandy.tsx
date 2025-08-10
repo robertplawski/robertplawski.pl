@@ -1,5 +1,5 @@
 "use client";
-import Waves from "./bits/Waves/Waves";
+import Waves from "../../bits/Waves/Waves";
 
 export default function EyeCandy() {
   return (

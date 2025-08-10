@@ -16,7 +16,7 @@ import { FaChevronDown, FaDocker } from "react-icons/fa";
 import { HeroButton } from "@/app/components/interactable/HeroButton";
 import { JobStatus } from "@/app/components/informational/JobStatus";
 import { TechIconLink } from "@/app/components/interactable/TechIconLink";
-import EyeCandy from "../../EyeCandy";
+import EyeCandy from "../decorational/EyeCandy";
 
 function Hero() {
   return (
