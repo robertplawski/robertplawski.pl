@@ -1,3 +1,4 @@
+import AnimatedGrid from "@/app/bits/AnimatedGrid/AnimatedGrid";
 import React, { ReactNode } from "react";
 import { FaGraduationCap, FaLaptop } from "react-icons/fa";
 
@@ -74,9 +75,10 @@ export default function ProfessionalExperience() {
   return (
     <section
       id="experience"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-950 border-y-1 border-neutral-700"
+      className="font-sans relative py-20 px-4 sm:px-6 lg:px-8 bg-neutral-950 border-y-1 border-neutral-700"
     >
-      <div className="mx-auto max-w-3xl">
+      {" "}
+      <div className="mx-auto z-10 relative max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-4">
             Education & Experience

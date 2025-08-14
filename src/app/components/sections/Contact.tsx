@@ -50,7 +50,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20  dark:bg-neutral-900">
+    <section
+      id="contact"
+      className="py-20 font-sans  dark:bg-neutral-950 border-y-1"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-4xl">
@@ -112,7 +115,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700 p-8">
+          <div className="bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700 p-8">
             <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-6">
               Send a Message
             </h3>

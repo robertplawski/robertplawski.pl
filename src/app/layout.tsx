@@ -51,10 +51,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" className="dark">
       <meta name="darkreader-lock" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden `}
+        className={`font-sans ${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden `}
       >
         {children}
       </body>

@@ -45,7 +45,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-50 dark:bg-neutral-900"
+      className="font-sans py-20 px-4 sm:px-6 lg:px-8 bg-neutral-50 dark:bg-neutral-900"
     >
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
@@ -110,7 +110,7 @@ export default function Testimonials() {
           <p className="text-neutral-600 dark:text-neutral-400">
             Interested in working together?{" "}
             <a
-              href="#contact"
+              href="mailto:dev@robertplawski.pl"
               className="text-neutral-900 dark:text-neutral-100 font-medium hover:underline"
             >
               Let&apos;s discuss your project

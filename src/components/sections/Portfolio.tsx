@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import AnimatedGrid from "../../bits/AnimatedGrid/AnimatedGrid";
 import { BiCode } from "react-icons/bi";
+import AnimatedGrid from "@/app/bits/AnimatedGrid/AnimatedGrid";
 import GlowCard from "@/app/bits/GlowCard/GlowCard";
 
 interface Project {
