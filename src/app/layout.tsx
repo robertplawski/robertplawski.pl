@@ -54,7 +54,7 @@ export default function RootLayout({
     <html lang="pl">
       <meta name="darkreader-lock" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden `}
+        className={`font-sans ${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden `}
       >
         {children}
       </body>

@@ -6,7 +6,7 @@ function SourceCode() {
   return (
     <section
       id="source"
-      className="relative py-40 px-4 sm:px-6 lg:px-8 bg-neutral-950 border-y-1 border-neutral-700"
+      className="font-sans relative py-40 px-4 sm:px-6 lg:px-8 bg-neutral-950 border-y-1 border-neutral-700"
     >
       <div className="opacity-30 absolute top-0 left-0 w-full h-full">
         <LetterGlitch

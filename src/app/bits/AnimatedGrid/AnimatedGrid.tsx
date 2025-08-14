@@ -11,7 +11,7 @@ export default function AnimatedGrid() {
       </div>
 
       <Particles
-        particleColors={["#757575"]}
+        particleColors={["#656565"]}
         particleCount={200}
         particleSpread={10}
         speed={0.05}

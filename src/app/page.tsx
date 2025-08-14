@@ -1,4 +1,4 @@
-//import Portfolio from "./Portfolio";
+// import Portfolio from "./components/sections/Portfolio";
 import ProfessionalExperience from "./components/sections/ProfessionalExperience";
 import Hero from "./components/sections/Hero";
 // import { Footer } from "./components/sections/Footer";
@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <Hero />
       <ProfessionalExperience />
-      {/*<Testimonials />*/}
-      {/*<Portfolio />*/}
-      {/*<Contact />*/}
+      {/* <Testimonials /> */}
+      {/* <Portfolio /> */}
+      {/* <Contact /> */}
       {/* <Footer /> */}
       <SourceCode />
       <div className="font-mono text-sm bg-neutral-900 border-neutral-200 dark:border-neutral-900 p-8 text-center">
