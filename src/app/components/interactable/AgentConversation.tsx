@@ -27,8 +27,8 @@ function AgentConversation() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 backdrop-blur-sm relative size-full rounded-lg border h-[400px]">
-      <div className="flex flex-col h-full ">
+    <div className="max-w-5xl w-full  mx-auto p-6 backdrop-blur-sm relative size-full rounded-lg border h-[500px]">
+      <div className="flex w-full flex-col h-full ">
         <Conversation>
           <ConversationContent>
             {messages.map((message) => (

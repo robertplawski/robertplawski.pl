@@ -5,7 +5,7 @@ import AgentConversation from "../interactable/AgentConversation";
 function Agent() {
   return (
     <div className="relative font-sans flex flex-col items-center">
-      <div className="z-10 max-w-3xl p-24 flex flex-col gap-8">
+      <div className="z-10 max-w-4xl py-12 p-6 sm:p-24 flex flex-col gap-8">
         <h2 className="text-4xl font-bold sm:text-5xl text-center">
           Ask my agent anything
         </h2>
