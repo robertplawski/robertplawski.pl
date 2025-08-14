@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" className="dark">
       <meta name="darkreader-lock" />
       <body
         className={`font-sans ${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden `}
