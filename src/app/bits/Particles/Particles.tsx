@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
+import { Renderer, Camera, Geometry, Program, Mesh, OGLRenderingContext } from "ogl";
+import { WebGLRenderer } from "three/src/Three.js";
 
 interface ParticlesProps {
   particleCount?: number;
@@ -112,17 +113,23 @@ const Particles: React.FC<ParticlesProps> = ({
 
   useEffect(() => {
     const container = containerRef.current;
+
+    let animationFrameId: number;
+    let gl: OGLRenderingContext;
+    let handleMouseMove;
+    let resize;
+
     if (!container) return;
 
     try {
       const renderer = new Renderer({ depth: false, alpha: true });
-      const gl = renderer.gl;
+      gl = renderer.gl;
       container.appendChild(gl.canvas);
       gl.clearColor(0, 0, 0, 0);
       const camera = new Camera(gl, { fov: 15 });
       camera.position.set(0, 0, cameraDistance);
 
-      const resize = () => {
+      resize = () => {
         const width = container.clientWidth;
         const height = container.clientHeight;
         renderer.setSize(width, height);
@@ -131,7 +138,7 @@ const Particles: React.FC<ParticlesProps> = ({
       window.addEventListener("resize", resize, false);
       resize();
 
-      const handleMouseMove = (e: MouseEvent) => {
+      handleMouseMove = (e: MouseEvent) => {
         const rect = container.getBoundingClientRect();
         const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
         const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
@@ -191,7 +198,6 @@ const Particles: React.FC<ParticlesProps> = ({
 
       const particles = new Mesh(gl, { mode: gl.POINTS, geometry, program });
 
-      let animationFrameId: number;
       let lastTime = performance.now();
       let elapsed = 0;
 
@@ -229,6 +235,9 @@ const Particles: React.FC<ParticlesProps> = ({
       return
     }
     return () => {
+      if (!resize || !handleMouseMove || !animationFrameId) {
+        return;
+      }
       window.removeEventListener("resize", resize);
       if (moveParticlesOnHover) {
         container.removeEventListener("mousemove", handleMouseMove);
