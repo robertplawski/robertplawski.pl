@@ -42,7 +42,6 @@ function AgentConversation() {
                 <MessageContent>
                   {message.parts.filter((part) => part?.type === "text").length < 0 && <Loader2 className="animate-spin duration-700  " />}
                   {message.parts.map((part, i) => {
-                    console.log(part.type)
                     switch (part.type) {
                       case "text":
                         return (
