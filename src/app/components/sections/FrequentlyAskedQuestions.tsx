@@ -99,7 +99,7 @@ export default function FrequentlyAskedQuestions() {
                 </div>
               </button>
 
-              <div className={`max-h-[0] transition-all ${openItems.includes(faq.id) ? 'max-h-[10rem]' : ''}`}>
+              <div className={`max-h-[0] transition-all ${openItems.includes(faq.id) ? 'max-h-[50vh]' : ''}`}>
                 <p className="text-neutral-300 text-lg px-6 pb-6 pt-6 leading-relaxed">
                   {faq.answer}
                 </p>
