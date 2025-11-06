@@ -65,7 +65,7 @@ const projects: Project[] = [
     id: 2,
     title: "unnamed glossary app (guga) ",
     description:
-      "GUGA, to projekt szkolny, z ZSTIO im. Kazimierza Gzowskiego (stąd nazwa). Pomysł na aplikację narodził się na lekcji angielskiego, by stworzyć coś przydatnego do nauki języka.\n\n Obecnie aplikacja posiada ok. 180 zarejestrowanych kont uczniów oraz setki słów.",
+      "GUGA, to projekt szkolny, z ZSTIO im. Kazimierza Gzowskiego (stąd nazwa). Pomysł na aplikację narodził się na lekcji angielskiego, by stworzyć coś przydatnego do nauki języka.\n\n Obecnie aplikacja posiada setki słów oraz wiele uczniów z jej korzysta.",
     technologies: ["React", "TailwindCSS", "Hono", "BetterAuth", "Drizzle", "Cloudflare pages+workers+D1+KV"],
     githubUrl: "https://github.com/robertplawski/gzowski-unnamed-glossary-app",
     liveUrl: "https://guga.eksabajt.pl",
