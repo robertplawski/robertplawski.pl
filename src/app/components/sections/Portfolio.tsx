@@ -158,7 +158,7 @@ const projects: Project[] = [
 
 
 const SeeMoreCard = () => {
-  return <Link className="col-span-2" href="https://github.com/robertplawski">
+  return <Link className="md:col-span-2" href="https://github.com/robertplawski">
 
     <GlowCard className="group">
       <div className="relative h-full bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-xl overflow-hidden transition-all duration-300 hover:border-neutral-700 hover:shadow-2xl hover:shadow-neutral-500/10">
@@ -189,7 +189,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <div className="h-48 bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
           {project.previewImage ?
 
-            <Image className=" object-center" alt={`${project.title}'s preview image`} src={project.previewImage} />
+            <Image className=" object-center object-cover" alt={`${project.title}'s preview image`} src={project.previewImage} />
             :
             <div className="text-center flex justify-center flex-col items-center">
 
