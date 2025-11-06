@@ -9,15 +9,14 @@ function Agent() {
         <h2 className="text-4xl font-bold sm:text-5xl text-center">
           Ask my agent anything
         </h2>
-
-        <AgentConversation />
         <p className="text-muted-foreground text-lg text-center">
           I’ve built an AI to handle questions when I’m away, but I’d prefer you
-          email me at dev@robertplawski.pl. All messages are stored.
+          email me at dev@robertplawski.pl. All messages will be stored.
         </p>
+        <AgentConversation />
+
       </div>
 
-      <AnimatedGrid />
     </div>
   );
 }

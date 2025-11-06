@@ -5,7 +5,8 @@ import Hero from "./components/sections/Hero";
 import { CurrentYear } from "./components/informational/CurrentYear";
 import SourceCode from "./components/sections/SourceCode";
 import Agent from "./components/sections/Agent";
-//import Portfolio from "./components/sections/Portfolio";
+import Portfolio from "./components/sections/Portfolio";
+import FrequentlyAskedQuestions from "./components/sections/FrequentlyAskedQuestions";
 // import Contact from "./components/sections/Contact";
 // import Testimonials from "./components/sections/Testimonials";
 // import Contact from "./components/sections/Contact";
@@ -16,8 +17,9 @@ export default function Home() {
       <Hero />
       <ProfessionalExperience />
       {/* <Testimonials /> */}
-      {/*<Portfolio />*/}
+      <Portfolio />
       {/* <Footer /> */}
+      <FrequentlyAskedQuestions />
       <Agent />
       {/* <Contact /> */}
       <SourceCode />

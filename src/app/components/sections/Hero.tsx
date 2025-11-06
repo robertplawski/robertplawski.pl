@@ -126,7 +126,7 @@ function Hero() {
           <JobStatus />
         </main>
       </div>
-      <div className={"flex flex-col gap-2 items-center absolute  bottom-10"}>
+      <div className={"flex hover:scale-[1.5] hover:opacity-100 transition-all flex-col gap-2 items-center absolute  bottom-10 opacity-50"}>
         <FaChevronDown />
       </div>
     </div>

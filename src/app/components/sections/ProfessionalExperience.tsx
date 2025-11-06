@@ -1,4 +1,3 @@
-import AnimatedGrid from "@/app/bits/AnimatedGrid/AnimatedGrid";
 import React, { ReactNode } from "react";
 import { FaGraduationCap, FaLaptop } from "react-icons/fa";
 
@@ -38,7 +37,7 @@ const experiences: Experience[] = [
     icon: <FaLaptop />,
     company: "",
     position: "Junior Frontend Developer Internship",
-    period: "2025 ",
+    period: "2025 April-May ",
     description:
       "Managed React frontend of an e-commerce application with emphasis on responsive design. Gained experience using git, react, typescript and css postprocessors. Also improved my teamwork skills. ",
     technologies: ["React", "Typescript", "Sass", "Git"],

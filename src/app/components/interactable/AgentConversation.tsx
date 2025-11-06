@@ -13,10 +13,14 @@ import { useEffect, useState } from "react";
 import { UIMessage, useChat } from "@ai-sdk/react";
 import { Response } from "@/components/ai-elements/response";
 import { uuid } from "zod/v4";
+import { Loader2, LucideBrain } from "lucide-react";
 
 function AgentConversation() {
   const [input, setInput] = useState("");
-  const { messages, sendMessage, status } = useChat();
+  const { messages, sendMessage, status, setMessages } = useChat();
+  useEffect(() => {
+    setMessages((prev) => [{ id: -1, role: "assistant", parts: [{ type: "text", text: "I'm a helpful assistant, you can ask me anything." }] } as UIMessage, ...prev]);
+  }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,16 +38,18 @@ function AgentConversation() {
             {messages.map((message) => (
               <Message from={message.role} key={message.id}>
                 <MessageContent>
+                  {message.parts.filter((part) => part?.type === "text").length < 0 && <Loader2 className="animate-spin duration-700  " />}
                   {message.parts.map((part, i) => {
+                    console.log(part.type)
                     switch (part.type) {
-                      case "text": // we don't use any reasoning or tool calls in this example
+                      case "text":
                         return (
                           <Response key={`${message.id}-${i}`}>
                             {part.text}
                           </Response>
                         );
-                      default:
-                        return null;
+                      //case "reasoning":
+                      //  return <p><LucideBrain />{part.text}</p>
                     }
                   })}
                 </MessageContent>
