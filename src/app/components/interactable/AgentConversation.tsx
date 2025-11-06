@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import { UIMessage, useChat } from "@ai-sdk/react";
 import { Response } from "@/components/ai-elements/response";
 import { uuid } from "zod/v4";
-import { Loader2, LucideBrain } from "lucide-react";
+import { AlertCircle, Loader2, LucideBrain } from "lucide-react";
 
 function AgentConversation() {
   const [input, setInput] = useState("");
@@ -53,6 +53,12 @@ function AgentConversation() {
                       //  return <p><LucideBrain />{part.text}</p>
                     }
                   })}
+                  {message.role === "assistant" && 
+                  <div className="pt-2 gap-2 text-sm opacity-70">
+                    <AlertCircle className="float-left mr-2" size={18}/>
+                    <p>(treść ma charakter poglądowy i może być niezgodna z prawdą)</p>
+                  </div>
+                  }
                 </MessageContent>
               </Message>
             ))}
