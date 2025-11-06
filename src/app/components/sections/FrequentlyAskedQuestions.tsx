@@ -42,7 +42,7 @@ const faqs: FAQ[] = [
   {
     id: 7,
     question: "What is your experience with DevOps and infrastructure?",
-    answer: "I have experience with Docker, VPS management, CI/CD pipelines, and cloud deployments on platforms like Vercel, Netlify, GitHub Pages, and Cloudflare Workers/Pages. I'm proficient with GNU/Linux systems and currently run Fedora 41 while managing Proxmox home server and TrueNAS SCALE instances.",
+    answer: "I have experience with Docker, VPS management, CI/CD pipelines, and cloud deployments on platforms like Vercel, Netlify, GitHub Pages, and Cloudflare Workers/Pages. I'm proficient with GNU/Linux systems and personally run Fedora while managing TrueNAS home instance and had experience with proxmox home server.",
   },
   {
     id: 8,
