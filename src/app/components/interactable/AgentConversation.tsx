@@ -19,7 +19,9 @@ function AgentConversation() {
   const [input, setInput] = useState("");
   const { messages, sendMessage, status, setMessages } = useChat();
   useEffect(() => {
-    setMessages((prev) => [{ id: -1, role: "assistant", parts: [{ type: "text", text: "I'm a helpful assistant, you can ask me anything." }] } as UIMessage, ...prev]);
+    setMessages((prev) => [
+      { id: -1, role: "assistant", parts: [{ type: "text", text: "I'm a helpful assistant, you can ask me anything." }] } as unknown as any,
+      ...prev]);
   }, [])
 
   const handleSubmit = (e: React.FormEvent) => {

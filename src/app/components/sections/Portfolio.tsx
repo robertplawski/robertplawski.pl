@@ -262,7 +262,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               className="flex items-center gap-2 text-neutral-400 hover:text-neutral-300 transition-colors"
             >
               <FaExternalLinkAlt className="w-4 h-4" />
-              <span className="text-sm">Live Demo</span>
+              <span className="text-sm">Live </span>
             </a>
           )}
         </div>
