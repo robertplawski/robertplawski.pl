@@ -7,6 +7,7 @@ import SourceCode from "./components/sections/SourceCode";
 import Agent from "./components/sections/Agent";
 import Portfolio from "./components/sections/Portfolio";
 import FrequentlyAskedQuestions from "./components/sections/FrequentlyAskedQuestions";
+import NavigateUpArrow from "./components/interactable/NavigateUpArrow";
 // import Contact from "./components/sections/Contact";
 // import Testimonials from "./components/sections/Testimonials";
 // import Contact from "./components/sections/Contact";
@@ -14,6 +15,7 @@ import FrequentlyAskedQuestions from "./components/sections/FrequentlyAskedQuest
 export default function Home() {
   return (
     <>
+      <NavigateUpArrow />
       <Hero />
       <ProfessionalExperience />
       {/* <Testimonials /> */}
