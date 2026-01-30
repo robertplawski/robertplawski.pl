@@ -30,11 +30,6 @@ const faqs: FAQ[] = [
     answer: "I'm available for hire on a part-time or short-term basis, mostly for remote work with hybrid part-time possibilities. I work with clients in Poland, the EU, and internationally. Feel free to contact me to discuss your project requirements and timeline.",
   },
   {
-    id: 5,
-    question: "What is your pricing structure?",
-    answer: "I offer two pricing options: Tiered hourly rates (80-150 PLN/hour based on project complexity) or fixed-price projects (300-600 PLN for small projects, 800-2000 PLN for medium projects, 2500+ PLN for complex applications). Ongoing maintenance and retainer agreements are available at additional cost.",
-  },
-  {
     id: 6,
     question: "Do you work with e-commerce websites?",
     answer: "Yes, I have experience with e-commerce applications including React-based e-commerce frontends and WooCommerce for WordPress. I can help set up online stores, payment integrations, and product management systems.",

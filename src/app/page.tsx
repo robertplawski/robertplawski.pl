@@ -8,6 +8,7 @@ import Agent from "./components/sections/Agent";
 import Portfolio from "./components/sections/Portfolio";
 import FrequentlyAskedQuestions from "./components/sections/FrequentlyAskedQuestions";
 import NavigateUpArrow from "./components/interactable/NavigateUpArrow";
+import References from "./components/sections/References";
 // import Contact from "./components/sections/Contact";
 // import Testimonials from "./components/sections/Testimonials";
 // import Contact from "./components/sections/Contact";
@@ -18,6 +19,7 @@ export default function Home() {
       <NavigateUpArrow />
       <Hero />
       <ProfessionalExperience />
+      <References />
       {/* <Testimonials /> */}
       <Portfolio />
       {/* <Footer /> */}
