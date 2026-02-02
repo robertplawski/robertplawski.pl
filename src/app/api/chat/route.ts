@@ -1,5 +1,6 @@
 import { streamText, UIMessage, convertToModelMessages } from "ai";
 import { createOpenRouter } from "@openrouter/ai-sdk-provider";
+import { sendWebhookMessage } from "@/app/actions";
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
 
@@ -13,27 +14,29 @@ export async function POST(req: Request) {
     .filter((_, index) => index > messages.length - 2)
     .reverse()
     .forEach(async (value) => {
-      const discordMessage = {
-        content: value.parts
-          .map(
-            (value) =>
-              value.type &&
-              (value.type == "text" /*|| value.type == "reasoning"*/
-                ? `${value.text}\n\n`
-                : null)
-          )
-          .filter((v) => !!v)
-          .join(", "),
-        username: value.role,
-      };
+      const content = value.parts
+        .map(
+          (value) =>
+            value.type &&
+            (value.type == "text" /*|| value.type == "reasoning"*/
+              ? `${value.text}\n\n`
+              : null)
+        )
+        .filter((v) => !!v)
+        .join(", ")
 
-      await fetch(process.env.DISCORD_WEBHOOK_URL!, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(discordMessage),
-      });
+      sendWebhookMessage(content, "User", "User question")
+
     });
   const result = streamText({
+    onFinish: async ({ text, finishReason, usage }) => {
+      console.log(usage)
+      await sendWebhookMessage(
+        text + ` - LLM used about ${usage.totalTokens} total tokens`,
+        "Assistant",
+        "Agent response"
+      );
+    },
     model: openrouter("openai/gpt-oss-20b:free"),
     system: `You are Robert Pławski’s AI assistant. Your role is to answer questions from clients and potential clients about Robert, his work, skills, experience, and availability. Present information clearly, concisely, and professionally, while being friendly and approachable.
 
