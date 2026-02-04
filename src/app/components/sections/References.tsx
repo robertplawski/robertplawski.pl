@@ -1,5 +1,6 @@
 import GlowCard from "@/app/bits/GlowCard/GlowCard"
 import { DownloadIcon } from "lucide-react"
+import TiltedLines from "../decorational/TiltedLines"
 
 const DOWNLOAD_URL_ROOT = "/documents/"
 const FILENAME_ROOT = "robert-plawski-pl-"
@@ -33,13 +34,13 @@ function DocumentCard({ title, date, src }: DocumentCardProps) {
 
 export default function References() {
   return <section
-    id="portfolio"
+    id="references"
     className="py-20 border-neutral-700 border-b-1 px-4 sm:px-6 lg:px-8  bg-neutral-950/20 relative"
   >
 
+    <TiltedLines />
     <div className=" flex-col mx-auto max-w-7xl">
 
-      <div className="absolute top-0 left-0 h-full -z-10 w-full bg-radial from-neutral-950/0 via-neutral-900/50 to-neutral-900"></div>
       <div className="relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-4">

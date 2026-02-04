@@ -1,6 +1,8 @@
 "use client"
+import Particles from "@/app/bits/Particles/Particles";
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import TiltedLines from "../decorational/TiltedLines";
 
 interface FAQ {
   id: number;
@@ -62,6 +64,7 @@ export default function FrequentlyAskedQuestions() {
       id="faq"
       className="font-sans relative py-20 px-4 sm:px-6 lg:px-8 bg-neutral-950 border-y-1 border-neutral-700"
     >
+      <TiltedLines />
       <div className="mx-auto z-10 relative max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-4">
