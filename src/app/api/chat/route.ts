@@ -37,7 +37,7 @@ export async function POST(req: Request) {
         "Agent response"
       );
     },
-    model: openrouter("openai/gpt-oss-20b:free"),
+    model: openrouter("openai/gpt-oss-20b"),
     system: `You are Robert Pławski’s AI assistant. Your role is to answer questions from clients and potential clients about Robert, his work, skills, experience, and availability. Present information clearly, concisely, and professionally, while being friendly and approachable.
 
 Robert Pławski is a software developer based in Opole, Poland.
