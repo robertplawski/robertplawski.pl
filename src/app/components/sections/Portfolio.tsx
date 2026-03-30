@@ -9,6 +9,7 @@ import gugaPreviewImage from "@/assets/guga.png"
 import eksaPreviewImage from "@/assets/eksa.png"
 import antikPreviewImage from "@/assets/antik.png"
 import poemataPreviewImage from "@/assets/poemata.png"
+import sensorsPreviewImage from "@/assets/sensors.png"
 import Image, { StaticImageData } from "next/image";
 
 interface Project {
@@ -109,6 +110,15 @@ const projects: Project[] = [
     tags: ["webapp", "hobby"]
 
   },
+  {
+    id: 6, title: "Air quality mesh sensors",
+    description: "This project uses LoRa connectivity to send arduino sensor data from client to server. Server uses web technologies to host api endpoints, and next.js for responsive PWA for data visualization and server interaction. 3d printed custom chassis",
+    githubUrl: "https://github.com/robertplawski/mesh-sensors",
+    liveUrl: "https://sensors.eksabajt.pl",
+    previewImage: sensorsPreviewImage,
+    technologies: ["NextJS", "TailwindCSS", "Fastapi", "SQLite", "RaspberryPI", "Arduino", "3d printing"],
+    tags: ["webapp", "school"]
+  }
 
   /*{
     id: 4,
@@ -127,38 +137,11 @@ const projects: Project[] = [
     githubUrl: "https://github.com/eksabajt-pl/create-eksa-app",
     liveUrl: "https://create.eksabajt.pl",
   },*/
-
-  /*{
-    id: 4,
-    title: "Adipiscing Task Manager",
-    description:
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS", "Vercel"],
-    liveUrl: "https://example.com",
-  },
-  {
-    id: 5,
-    title: "Eiusmod Weather App",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.",
-    technologies: ["React Native", "Expo", "OpenWeather API", "Redux"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    id: 6,
-    title: "Tempor Content Platform",
-    description:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
-    technologies: ["Python", "Django", "Celery", "PostgreSQL"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },*/
 ];
 
 
 const SeeMoreCard = () => {
-  return <Link className="md:col-span-2" href="https://github.com/robertplawski">
+  return <Link className="md:col-span-1" href="https://github.com/robertplawski">
 
     <GlowCard className="group">
       <div className="relative h-full bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-xl overflow-hidden transition-all duration-300 hover:border-neutral-700 hover:shadow-2xl hover:shadow-neutral-500/10">
