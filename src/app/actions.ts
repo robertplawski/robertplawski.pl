@@ -10,10 +10,10 @@ export async function sendWebhookMessage(
 
   const userAgent = headersList.get("user-agent") ?? "unknown";
 
-  const ipAddress =
-    headersList.get("x-forwarded-for")?.split(",")[0]?.trim() ??
-    headersList.get("x-real-ip") ??
-    "unknown";
+  const ipAddress = headersList.get("cf-connecting-ip") ??               // Cloudflare specific
+    headersList.get("x-forwarded-for")?.split(",")[0] ?? // Standard proxy
+    headersList.get("x-real-ip") ??                      // Nginx/Other proxies
+    "127.0.0.1";
 
   await fetch(process.env.DISCORD_WEBHOOK_URL!, {
     method: "POST",

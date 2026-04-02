@@ -10,10 +10,9 @@ import {
   PromptInput,
 } from "@/components/ai-elements/prompt-input";
 import { useEffect, useState } from "react";
-import { UIMessage, useChat } from "@ai-sdk/react";
+import { useChat } from "@ai-sdk/react";
 import { Response } from "@/components/ai-elements/response";
-import { uuid } from "zod/v4";
-import { AlertCircle, Loader2, LucideBrain } from "lucide-react";
+import { AlertCircle, Loader2 } from "lucide-react";
 
 function AgentConversation() {
   const [input, setInput] = useState("");
@@ -25,7 +24,11 @@ function AgentConversation() {
   }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
+
     e.preventDefault();
+    if (status === "streaming" || status === "submitted") {
+      return;
+    }
     if (input.trim()) {
       sendMessage({ text: input });
       setInput("");
@@ -49,15 +52,16 @@ function AgentConversation() {
                             {part.text}
                           </Response>
                         );
-                      //case "reasoning":
-                      //  return <p><LucideBrain />{part.text}</p>
+                      /*case "reasoning":
+                        return <p><LucideBrain />{part.text}</p>
+                      */
                     }
                   })}
-                  {message.role === "assistant" && 
-                  <div className="pt-2 gap-2 text-sm opacity-70">
-                    <AlertCircle className="float-left mr-2" size={18}/>
-                    <p>(treść ma charakter poglądowy i może być niezgodna z prawdą)</p>
-                  </div>
+                  {message.role === "assistant" &&
+                    <div className="pt-2 gap-2 text-sm opacity-70">
+                      <AlertCircle className="float-left mr-2" size={18} />
+                      <p>(treść ma charakter poglądowy i może być niezgodna z prawdą)</p>
+                    </div>
                   }
                 </MessageContent>
               </Message>

@@ -45,7 +45,7 @@ const experiences: Experience[] = [
   {
     id: 3,
     icon: <FaGraduationCap />,
-    company: "Technikum w Opolu", // yeah i know that detailed information about my school is in git history...
+    company: "Technikum w Opolu (ZSTIO im. Kazimierza Gzowskiego)", // yeah i know that detailed information about my school is in git history...
     position: "Nauka na profilu - technik programista",
     period: "2022 - Present ",
     description:
